@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Exclusiva de iPhones y Accesorios</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Tienda Exclusiva Apple</div>
+        <nav>
+            <ul class="menu-right">
+                <li><a href="#login" onclick="toggleLoginForm()">Iniciar Sesión</a></li>
+                <li><a href="#signup" onclick="toggleSignupForm()">Crear Cuenta</a></li>
+                <li><a href="#contacto">Contactarnos</a></li>
+                <li><a href="#cart" onclick="toggleCart()">Carrito (<span id="cartCount">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="productos">
+        <section class="hero">
+            <h1>Bienvenido a Nuestra Tienda de iPhones y Accesorios</h1>
+            <p>Encuentra los mejores productos Apple, desde el iPhone 11 hasta el 16 Pro.</p>
+        </section>
+
+        <h2>iPhones Disponibles</h2>
+        <div class="product-section">
+            <button class="toggle-button" onclick="toggleIphones()">Ver iPhones</button>
+            <div id="iphones" class="product-list" style="display: none;">
+                <div class="card" onclick="showIphoneDetails('iPhone 11', 699.99, 'Cámara: 12MP, Procesador: A13 Bionic, Almacenamiento: 64GB')">
+                    <img src="IMG/iphone 11.jpg" alt="iPhone 11">
+                    <h3>iPhone 11</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 11', 699.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showIphoneDetails('iPhone 12', 799.99, 'Cámara: 12MP, Procesador: A14 Bionic, Almacenamiento: 64GB')">
+                    <img src="IMG/Iphone 12.jpg" alt="iPhone 12">
+                    <h3>iPhone 12</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 12', 799.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showIphoneDetails('iPhone 13', 799.99, 'Cámara: 12MP, Procesador: A15 Bionic, Almacenamiento: 128GB')">
+                    <img src="IMG/Iphone 13.jpg" alt="iPhone 13">
+                    <h3>iPhone 13</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 13', 799.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showIphoneDetails('iPhone 14', 799.99, 'Cámara: 12MP, Procesador: A16 Bionic, Almacenamiento: 128GB')">
+                    <img src="IMG/ipone 14.jpg" alt="iPhone 14">
+                    <h3>iPhone 14</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 14', 799.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showIphoneDetails('iPhone 15', 999.99, 'Cámara: 12MP, Procesador: A16 Bionic, Almacenamiento: 128GB')">
+                    <img src="IMG/iphone 15.jpg" alt="iPhone 15">
+                    <h3>iPhone 15</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 15', 999.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showIphoneDetails('iPhone 16', 1299.99, 'Cámara: 12MP, Procesador: A17 Bionic, Almacenamiento: 128GB')">
+                    <img src="IMG/iphone 16.jpg" alt="iPhone 16">
+                    <h3>iPhone 16</h3>
+                    <button class="add-to-cart" onclick="addToCart('iPhone 16', 1299.99)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>AirPods Disponibles</h2>
+        <div class="product-section">
+            <button class="toggle-button" onclick="toggleAirpods()">Ver AirPods</button>
+            <div id="airpods" class="product-list" style="display: none;">
+                <div class="card" onclick="showAirpodDetails('AirPods 2ª Gen', 159.99, 'Sonido: Calidad mejorada, Conectividad: Bluetooth')">
+                    <img src="IMG/Airpods 2da.jpg" alt="AirPods 2ª Gen">
+                    <h3>AirPods 2ª Gen</h3>
+                    <button class="add-to-cart" onclick="addToCart('AirPods 2ª Gen', 159.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showAirpodDetails('AirPods 3ª Gen', 179.99, 'Sonido: Calidad espacial, Conectividad: Bluetooth')">
+                    <img src="IMG/Airpods 3ra.jpg" alt="AirPods 3ª Gen">
+                    <h3>AirPods 3ª Gen</h3>
+                    <button class="add-to-cart" onclick="addToCart('AirPods 3ª Gen', 179.99)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Cases Disponibles</h2>
+        <div class="product-section">
+            <button class="toggle-button" onclick="toggleCases()">Ver Cases</button>
+            <div id="cases" class="product-list" style="display: none;">
+                <div class="card" onclick="showCaseDetails('Funda iPhone 11', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 11.webp" alt="Funda iPhone 11">
+                    <h3>Funda iPhone 11</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 11', 39.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showCaseDetails('Funda iPhone 12', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 12.webp" alt="Funda iPhone 12">
+                    <h3>Funda iPhone 12</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 12', 39.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showCaseDetails('Funda iPhone 13', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 13.jpg" alt="Funda iPhone 13">
+                    <h3>Funda iPhone 13</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 13', 39.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showCaseDetails('Funda iPhone 14', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 14.jpg" alt="Funda iPhone 14">
+                    <h3>Funda iPhone 14</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 14', 39.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showCaseDetails('Funda iPhone 15', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 15.webp" alt="Funda iPhone 15">
+                    <h3>Funda iPhone 15</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 15', 39.99)">Añadir al Carrito</button>
+                </div>
+                <div class="card" onclick="showCaseDetails('Funda iPhone 16', 39.99, 'Material: Silicona, Protección: Resistente a golpes')">
+                    <img src="IMG/Case 16.jpg" alt="Funda iPhone 16">
+                    <h3>Funda iPhone 16</h3>
+                    <button class="add-to-cart" onclick="addToCart('Funda iPhone 16', 39.99)">Añadir al Carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="details" class="details"></div>
+
+        <div id="cart" class="cart" style="display: none;">
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems"></div>
+            <p>Total: $<span id="totalPrice">0.00</span></p>
+            <button class="checkout-button" onclick="checkout()">Proceder a la Compra</button>
+            <button class="close-button" onclick="toggleCart()">Cerrar</button>
+        </div>
+
+
+        <div id="loginForm" class="login-form" style="display: none;">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" id="username" placeholder="Usuario">
+            <input type="password" id="password" placeholder="Contraseña">
+            <button class="login-button" onclick="login()">Iniciar Sesión</button>
+            <button class="close-button" onclick="toggleLoginForm()">Cerrar</button>
+        </div>
+
+        <div id="signupForm" class="signup-form" style="display: none;">
+            <h2>Crear Cuenta</h2>
+            <input type="text" id="newUsername" placeholder="Nuevo Usuario">
+            <input type="password" id="newPassword" placeholder="Nueva Contraseña">
+            <button class="signup-button" onclick="signup()">Crear Cuenta</button>
+            <button class="close-button" onclick="toggleSignupForm()">Cerrar</button>
+        </div>
+    </main>
+
+    <footer id="contacto">
+        <p>Contacto: info@tiendaexclusivaapple.com</p>
+    </footer>
+
+    <script src="JavaScript/index.js"></script>
+</body>
+</html>
