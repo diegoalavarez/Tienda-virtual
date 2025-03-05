@@ -1,242 +1,298 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f5f7;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Fuente principal */
+    background-color: #f5f5f7; /* Color de fondo */
+    color: #333; /* Color del texto */
+    margin: 0; /* Margen cero para el body */
+    padding: 0; /* Relleno cero para el body */
+    
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usar flexbox para el header */
+    justify-content: space-between; /* Espacio entre logo y menú */
+    align-items: center; /* Centrar verticalmente los elementos */
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 20px 40px; /* Relleno del header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del header */
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #0071e3;
+    font-size: 24px; /* Tamaño de la fuente del logo */
+    font-weight: bold; /* Negrita para el logo */
+    color: #0071e3; /* Color del logo */
 }
 
 nav {
-    display: flex;
-    align-items: center;
+    display: flex; /* Usar flexbox para el menú de navegación */
+    align-items: center; /* Centrar verticalmente los elementos */
 }
 
 .menu-right {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    list-style-type: none; /* Sin viñetas para la lista */
+    padding: 0; /* Sin relleno */
+    margin: 0; /* Sin margen */
+    display: flex; /* Usar flexbox para el menú */
 }
 
 .menu-right li {
-    margin: 0 15px;
+    margin: 0 15px; /* Margen horizontal entre elementos del menú */
 }
 
 .menu-right li a {
-    text-decoration: none;
-    color: #0071e3;
-    padding: 10px 15px;
-    transition: background-color 0.2s, color 0.2s;
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    color: #0071e3; /* Color de los enlaces */
+    padding: 10px 15px; /* Relleno de los enlaces */
+    transition: background-color 0.2s, color 0.2s; /* Transición suave para el hover */
 }
 
 .menu-right li a:hover {
-    background-color: #0071e3;
-    color: white;
-    border-radius: 4px;
+    background-color: #0071e3; /* Color de fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+    border-radius: 4px; /* Bordes redondeados */
 }
 
 .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #e7e7e7;
+    text-align: center; /* Centrar texto */
+    padding: 50px 20px; /* Relleno de la sección hero */
+    background-color: #e7e7e7; /* Color de fondo de la sección hero */
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 36px; /* Tamaño de la fuente del título */
+    margin-bottom: 10px; /* Margen inferior del título */
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 18px; /* Tamaño de la fuente de la descripción */
 }
 
 .product-section {
-    margin: 20px 0;
+    margin: 20px 0; /* Margen vertical de la sección de productos */
+    text-align: center; /* Centrar texto */
+}
+
+.featured-product {
+    display: flex; /* Usar flexbox para la imagen destacada */
+    justify-content: center; /* Centrar la imagen */
+    margin: 20px 0; /* Margen vertical */
 }
 
 .toggle-button {
-    background-color: #0071e3;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: background-color 0.3s;
+    background-color: #0071e3; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Relleno del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    margin: 10px 0; /* Margen vertical del botón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
 }
 
 .toggle-button:hover {
-    background-color: #005bb5;
-}
-
-.product-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #005bb5; /* Color de fondo al pasar el ratón */
 }
 
 .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
+    display: flex; /* Usar flexbox para el contenedor de tarjetas */
+    justify-content: center; /* Centrar las tarjetas */
+    flex-wrap: wrap; /* Permitir que las tarjetas se envuelvan */
+    padding: 20px; /* Relleno del contenedor de tarjetas */
 }
 
 .card {
-    background-color: #ffffff;
-    border: 1px solid #dcdcdc;
-    border-radius: 8px;
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    background-color: #ffffff; /* Color de fondo de la tarjeta */
+    border: 1px solid #dcdcdc; /* Borde de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 200px; /* Ancho de la tarjeta */
+    margin: 10px; /* Margen entre tarjetas */
+    padding: 10px; /* Relleno de la tarjeta */
+    text-align: center; /* Centrar texto en la tarjeta */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: transform 0.2s; /* Transición suave para el hover */
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
+    width: 100%; /* Imagen ocupa el 100% del ancho de la tarjeta */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 4px; /* Bordes redondeados de la imagen */
 }
 
 .add-to-cart {
-    background-color: #0071e3;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin: 5px 0;
-    transition: background-color 0.3s;
+    background-color: #0071e3; /* Color de fondo del botón de añadir al carrito */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    width: 100%; /* Ancho del botón */
+    margin: 5px 0; /* Margen vertical del botón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
 }
 
 .add-to-cart:hover {
-    background-color: #005bb5;
-}
-
-.details {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #0071e3;
-    border-radius: 8px;
-    background-color: #ffffff;
+    background-color: #005bb5; /* Color de fondo al pasar el ratón */
 }
 
 .cart {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #0071e3;
-    border-radius: 8px;
-    background-color: #ffffff;
+    margin: 20px; /* Margen de la sección del carrito */
+    padding: 20px; /* Relleno de la sección del carrito */
+    border: 1px solid #0071e3; /* Borde de la sección del carrito */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo de la sección del carrito */
 }
 
-.checkout-button, .login-button, .signup-button {
-    background-color: #0071e3;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin: 5px 0;
-    transition: background-color 0.3s;
+.cart-item {
+    display: flex; /* Usar flexbox para los elementos del carrito */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-bottom: 10px; /* Margen inferior entre elementos del carrito */
 }
 
-.checkout-button:hover, .login-button:hover, .signup-button:hover {
-    background-color: #005bb5;
+.cart-item img {
+    width: 50px; /* Ancho de la imagen del carrito */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin-right: 10px; /* Margen derecho entre imagen y texto */
 }
 
-.close-button {
-    background-color: #dcdcdc;
-    color: #333;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin: 5px 0;
-    transition: background-color 0.3s;
+.checkout-button, .close-button {
+    background-color: #0071e3; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Relleno del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    width: 100%; /* Ancho del botón */
+    margin: 5px 0; /* Margen vertical del botón */
+    transition: background-color 0.3s; /* Transición suave para el hover */
 }
 
-.close-button:hover {
-    background-color: #c0c0c0;
-}
-
-.login-form, .signup-form {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #0071e3;
-    border-radius: 8px;
-    background-color: #ffffff;
-}
-
-.login-form input, .signup-form input {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #dcdcdc;
-    border-radius: 4px;
+.checkout-button:hover, .close-button:hover {
+    background-color: #005bb5; /* Color de fondo al pasar el ratón */
 }
 
 footer {
+    text-align: center; /* Centrar texto en el pie de página */
+    padding: 20px; /* Relleno del pie de página */
+    background-color: #ffffff; /* Fondo blanco */
+    border-top: 1px solid #dcdcdc; /* Borde superior */
+}
+footer a {
+    transition: color 0.3s ease;
+    color: rgb(128, 128, 128);
+    text-decoration: none;
     text-align: center;
+}
+footer a:hover {
+    color: cornflowerblue;
+    text-align: center;
+}
+
+.details-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
     padding: 20px;
-    background-color: #ffffff;
-    border-top: 1px solid #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center; /* Centra el texto dentro de la tarjeta */
+}
+
+.details-card img {
+    width: 100%; /* Ajusta la imagen al ancho de la tarjeta */
+    max-width: 200px; /* Limita el ancho máximo de la imagen */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: red; /* Color rojo para la "X" */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.close-button:hover {
+    color: darkred; /* Cambia el color al pasar el mouse */
 }
 
 /* Media Queries para Responsividad */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear a la izquierda */
     }
 
     .menu-right {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 10px;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinear a la izquierda */
+        margin-top: 10px; /* Margen superior */
     }
 
     .menu-right li {
-        margin: 5px 0;
+        margin: 5px 0; /* Margen vertical entre elementos del menú */
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: 28px; /* Tamaño de la fuente del título en pantallas pequeñas */
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 16px; /* Tamaño de la fuente de la descripción en pantallas pequeñas */
     }
 
     .card-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar tarjetas */
     }
 
     .card {
-        width: 90%;
+        width: 90%; /* Ancho del 90% en pantallas pequeñas */
     }
+
+    .details-card {
+        position: fixed; /* Fijo en la pantalla */
+        top: 50%; /* Centrado verticalmente */
+        left: 50%; /* Centrado horizontalmente */
+        transform: translate(-50%, -50%); /* Ajuste para centrar */
+        background-color: white; /* Fondo blanco */
+        border: 1px solid #dcdcdc; /* Borde de la tarjeta */
+        border-radius: 8px; /* Bordes redondeados */
+        padding: 20px; /* Relleno de la tarjeta */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+        z-index: 1000; /* Asegura que esté encima de otros elementos */
+    }
+    
+    .close-details {
+        background: none; /* Sin fondo */
+        border: none; /* Sin borde */
+        color: #ff0000; /* Color rojo */
+        font-size: 20px; /* Tamaño de la fuente */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        float: right; /* Alinear a la derecha */
+    }
+}
+.carousel {
+    position: relative;
+    max-width: 100%; /* Ancho completo */
+    overflow: hidden; /* Ocultar contenido que se desborda */
+}
+
+.carousel-inner {
+    display: flex; /* Usar flexbox para alinear las imágenes en fila */
+    transition: transform 0.5s ease; /* Animación suave para el cambio de imagen */
+}
+
+.carousel-item {
+    min-width: 20%; /* Cada imagen ocupa el 20% del contenedor (ajusta según el número de imágenes) */
+    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+}
+
+.carousel img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
 }
