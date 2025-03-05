@@ -174,15 +174,15 @@ footer {
     padding: 20px; /* Relleno del pie de página */
     background-color: #ffffff; /* Fondo blanco */
     border-top: 1px solid #dcdcdc; /* Borde superior */
+    color: #000;
 }
 footer a {
     transition: color 0.3s ease;
-    color: rgb(128, 128, 128);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     text-align: center;
 }
 footer a:hover {
-    color: cornflowerblue;
     text-align: center;
 }
 
